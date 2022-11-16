@@ -1,7 +1,8 @@
-include<iostream>
+#include<iostream>
 using namespace std;
 
-int main {
+int main() {
   cout << "J'adore les bananes" << endl;
   return  0;
 }
+
