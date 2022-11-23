@@ -1,19 +1,22 @@
 #include<iostream>
+#include<time.h>
+#include<vector>
 #include "oiseaux.h"
-#include <time.h>
-#include <vector>
 
 using namespace std;
 
-void oiseau::initialiser(double X, double Y, double VX, double VY)
+int main()
 {
-  x = X;
-  y = Y;
-  vx = VX;
-  vy = VY;
-}
-
-void oiseau::afficher()
-{
-  cout << x << "   " << y << "   " << vx << "   " << vy << endl;
+  int N = 10; //Nombre d'oiseaux dans la nuée
+  srand48(time(NULL));
+  std::vector<oiseau> nuee;
+  double t = drand48();
+  oiseau O;
+  for(int i = 0; i < N; i++) {
+    O.initialiser(drand48(), drand48(), drand48(), drand48());
+    nuee.push_back(O);
+  }
+  for(int i = 0; i < N; i++)
+    nuee[i].afficher();
+  return 0;
 }
