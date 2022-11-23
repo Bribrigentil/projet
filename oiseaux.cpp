@@ -1,6 +1,6 @@
 #include<iostream>
 #include "oiseaux.H"
-#include <ctime>
+#include <time.h>
 #include <vector>
 
 using namespace std;
@@ -12,12 +12,12 @@ void oiseau::initialiser()
 
 void oiseau::alea()
 {
-    srand((unsigned int)time(0));
+    srand48(time(NULL));
     for(size_t i =0; i <oiseau.size();i++);
     {
-        oiseau[i].x = rand();
-        oiseau[i].y = rand();
-        oiseau[i].vx = rand();
-        oiseau[i].vy = rand();
+        oiseau[i].x = drand48();
+        oiseau[i].y = drand48);
+        oiseau[i].vx = drand48();
+        oiseau[i].vy = drand48();
     }
 }
