@@ -18,5 +18,5 @@ int main()
   }
   for(int i = 0; i < N; i++)
     nuee[i].afficher();
-  return 1;
+  return 0;
 }
