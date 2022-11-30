@@ -31,6 +31,9 @@ initialiser aléatoirement les positions et vitesses initiales des oiseaux. Pour
 7ème étape: définir l'angle pour que les angles ne voient pas à 360° autour d'eux
 
 8ème étape: ajouter la condition de non interpénétrabilité des oiseaux avec une taille ou distance de sécurité.
+  -réfléchir à qu'est ce qui se passe quand deux oiseaux s'entrechoquent. Priorité de certains oiseaux sur d'autres ?
+  
+9ème étape: paramètres additionnels: obstacles, comportement propre à chaque oiseau, 3D ???
 
 Après je sais pas encore
 
