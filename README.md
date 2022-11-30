@@ -24,7 +24,7 @@ initialiser aléatoirement les positions et vitesses initiales des oiseaux. Pour
 4ème étape: ajouter la condition de périodicité aux bords de l'interface SFML.
 
 5ème étape: implémenter les règles de mouvement que doivent respecter oiseaux.
-  -vitesse à t+dt= composante vitesse à t + composante dirigé vers le barycentre du groupe + composante pour alignere la vitesse avec la vitsse du groupe
+  -vitesse à t+dt= composante vitesse à t + composante dirigé vers le barycentre du groupe + composante pour aligner la vitesse avec la vitsse du groupe
 
 6ème étape: définir un rayon R de visibilité pour que les oiseaux n'intéragissent qu'avec ceux situés proches d'eux
 
@@ -33,7 +33,9 @@ initialiser aléatoirement les positions et vitesses initiales des oiseaux. Pour
 8ème étape: ajouter la condition de non interpénétrabilité des oiseaux avec une taille ou distance de sécurité.
   -réfléchir à qu'est ce qui se passe quand deux oiseaux s'entrechoquent. Priorité de certains oiseaux sur d'autres ?
   
-9ème étape: paramètres additionnels: obstacles, comportement propre à chaque oiseau, 3D ???
+9ème étape: paramètres additionnels: obstacles, comportement propre à chaque oiseau, 3D ???, Vent ?
+
+10ème étape: Ne toujours pas ajouter de compteur de morts
 
 Après je sais pas encore
 
