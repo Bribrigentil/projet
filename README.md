@@ -32,4 +32,6 @@ initialiser aléatoirement les positions et vitesses initiales des oiseaux. Pour
 
 8ème étape: ajouter la condition de non interpénétrabilité des oiseaux
 
+Après je sais pas encore
+
 
