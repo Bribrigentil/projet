@@ -1,8 +1,8 @@
-CXXFLAGS = -Wall
-DEPS = obstacle.h oiseaux.h fonctions.h     //Dans DEPS il faut mettre tous les fichiers .h
-OBJ = main.o oiseaux.o obstacle.o fonctions.o     //Dans OBJ, il faut mettre tous les fichiers .cpp en remplaçant .cpp par .o
+CXXFLAGS = -Wall -lsfml-graphics -lsfml-window -lsfml-system
+DEPS = fonctions.h obstacle.h oiseaux.f
+OBJ = main.o fonctions.o obstacle.o oiseaux.o
 
-excute: $(OBJ)
+mon_super_programme: $(OBJ)
 	g++ -o $@ $^ $(CXXFLAGS)
 	./execute
 
