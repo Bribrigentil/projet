@@ -11,18 +11,18 @@ int main()
 {
   srand48(time(NULL));
 
-  double Rayonvision = 3, Tempsreaction = 1, Anglevue = 0, Memoireangle = 1; //propriétés, comportement des oiseaux
+  double Rayonvision = 3, Tempsreaction = 1, Anglevue = 0, Memoireangle = 1, vgroupe = 2; //propriétés, comportement des oiseaux
   
-  int Taillesurfacex = 1600, Taillesurfacey = 900; //taille de l'interface SFML sur laquelle les oiseaux vont se déplacer
+  int Taillesurfacex = 1750, Taillesurfacey = 950; //taille de l'interface SFML sur laquelle les oiseaux vont se déplacer
   
-  int N = 30; //Nombre d'oiseaux dans la nuée
+  int N = 100; //Nombre d'oiseaux dans la nuée
 
   double dt = 0.1; //intervalle de temps entre chaque itération
   
   vector<oiseau> nuee; //Notre nuée d'oiseaux est définie comme un vecteur d'oiseaux
 
   for(int i = 0; i < N; i++) { //initialisation de la nuée d'oiseaux
-    oiseau O(Rayonvision, Tempsreaction, Anglevue, Memoireangle, Taillesurfacex, Taillesurfacey);
+    oiseau O(Rayonvision, Tempsreaction, Anglevue, Memoireangle, vgroupe, Taillesurfacex, Taillesurfacey);
     nuee.push_back(O);
   }
   
@@ -69,7 +69,10 @@ int main()
       // fin de la frame courante, affichage de tout ce qu'on a dessiné
       window.display();
 
-      for (int i = 0; i < N; i++) { //mise à jour de la position des oiseaux à l'intant t+dt
+      for (int i = 0; i < N; i++) //mise à jour de la position des oiseaux à l'intant t+dt
+	nuee[i].adaptationvitesse(nuee, dt, vgroupe, Taillesurfacex, Taillesurfacey);
+
+      for (int i = 0; i < N; i++) {
 	
 	nuee[i].x = nuee[i].x + nuee[i].vx*dt; //position selon x
 	
