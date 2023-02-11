@@ -35,7 +35,8 @@ initialiser aléatoirement les positions et vitesses initiales des oiseaux. Pour
   
 9ème étape: paramètres additionnels: obstacles, comportement propre à chaque oiseau, 3D ???, Vent ?
 
-10ème étape: Ne toujours pas ajouter de compteur de morts
+10ème étape: Ne toujours pas ajouter de compteur de morts.
+
 Je me permet de modifier le readme, car je pense que le compteur de mort est nécessaire bisous.
 
 Après je sais pas encore
