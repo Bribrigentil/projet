@@ -37,7 +37,7 @@ initialiser aléatoirement les positions et vitesses initiales des oiseaux. Pour
 
 10ème étape: Ne toujours pas ajouter de compteur de morts.
 
-Je me permet de modifier le readme, car je pense que le compteur de mort est nécessaire bisous.
+Je me permet de modifier le readme, car je pense que le compteur de mort ne sera jamais nécessaire bisous. D'ailleur il n'est pas Pauli, vu qu'il n'est pas important..
 
 Après je sais pas encore
 
