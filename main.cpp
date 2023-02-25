@@ -18,7 +18,7 @@ int main()
   srand(time(NULL));
   
   
-  double Rayonvision = 200, Tempsreaction = 1, Anglevue = 0, Memoireangle = 1, vgroupe = 2,TailleOiseau=100; //propriétés, comportement des oiseaux
+  double Rayonvision = 100, Tempsreaction = 1, Anglevue = 0, Memoireangle = 1, vgroupe = 2,TailleOiseau=Rayonvision/10; //propriétés, comportement des oiseaux
   
   int Taillesurfacex = 1750, Taillesurfacey = 950; //taille de l'interface SFML sur laquelle les oiseaux vont se déplacer
   
@@ -70,17 +70,30 @@ int main()
 	// on définit la couleur des sommets du triangle
   
 	oiseau[0].color = sf::Color::Green;
-        oiseau[1].color = sf::Color::White;
+  oiseau[1].color = sf::Color::White;
 	oiseau[2].color = sf::Color::White;
 
   // Champ de vision oiseau
-  /*
+  
     sf::CircleShape cercle(Rayonvision);
     cercle.setOutlineThickness(1.f);
     cercle.setFillColor(sf::Color::Transparent);
     cercle.setPosition(nuee[i].x-Rayonvision,nuee[i].y-Rayonvision);
     window.draw(cercle);
-  */
+
+    sf::CircleShape cercle2(TailleOiseau);
+    cercle2.setOutlineThickness(1.f);
+    cercle2.setOutlineColor(sf::Color(250, 150, 100));
+    cercle2.setFillColor(sf::Color::Transparent);
+    cercle2.setPosition(nuee[i].x-TailleOiseau,nuee[i].y-TailleOiseau);
+    window.draw(cercle2);
+
+    sf::CircleShape cercle3(TailleOiseau/3);
+    cercle3.setOutlineThickness(1.f);
+    cercle3.setOutlineColor(sf::Color::Red);
+    cercle3.setFillColor(sf::Color::Transparent);
+    cercle3.setPosition(nuee[i].x-TailleOiseau/3,nuee[i].y-TailleOiseau/3);
+    window.draw(cercle3);
 	// pas de coordonnées de texture ici, nous verrons ça plus tard
 
 	//On dessine les oiseaux un par un
@@ -105,7 +118,6 @@ int main()
   // fin de la frame courante, affichage de tout ce qu'on a dessiné
   window.display();
 
-
       for (int i = 0; i < N; i++) //mise à jour de la position des oiseaux à l'intant t+dt
 	nuee[i].adaptationvitesse(nuee, dt, vgroupe, Taillesurfacex, Taillesurfacey);
 
@@ -126,6 +138,6 @@ int main()
 	  nuee[i].y -= Taillesurfacey;
       }
     }
-    
+
     return 0;
 }

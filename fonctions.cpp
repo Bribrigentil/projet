@@ -15,5 +15,8 @@ double rejetgaussien(double moyenne, double variance) { // Fournit valeur alea. 
 }
 
 double gaussienne(double x,double variance){
-  return exp(-(x*x)/(2*variance));
+  return sqrt(2*variance/M_PI)*exp(-(x*x)/(2*variance));
+}
+double lorentzienne(double x,double variance){
+  return 1/(1+x*x/variance);
 }

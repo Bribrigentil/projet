@@ -62,7 +62,8 @@ void oiseau::adaptationvitesse(vector<oiseau> nuee, double dt, double vgroupe, d
 
   int compteur1=0,compteur2=0; //On compte le nombre d'oiseaux qu'il voit (compteur1) et le nombre d'oiseaux trop proches (compteur2)
   double xfuite=0,yfuite=0; //Barycentre des oiseaux trop proches avec lequel il veut guarder ses distances
-  double A=0,B=0;//coeffs pour prendre en compte l'eloignement
+  double A=0,B=0,C=0,D=0;//coeffs pour prendre en compte l'eloignement
+  double xcrit,ycrit,dcrit=tailleO/3;
 
   for (int i = 0; i < nuee.size(); i++) {
     double distance=sqrt((nuee[i].x-x)*(nuee[i].x-x)+(nuee[i].y-y)*(nuee[i].y-y));
@@ -79,7 +80,14 @@ void oiseau::adaptationvitesse(vector<oiseau> nuee, double dt, double vgroupe, d
       compteur2++;
       xfuite+=nuee[i].x; //position moyenes des oiseaux trop proches
       yfuite+=nuee[i].y;
+
+      if (distance<dcrit){
+        xcrit=nuee[i].x;
+        ycrit=nuee[i].y;
+        dcrit=distance;
+      }
     }
+    
     }
   }
   //Si il voit des oiseaux il modifie sa trajectoire
@@ -113,10 +121,20 @@ void oiseau::adaptationvitesse(vector<oiseau> nuee, double dt, double vgroupe, d
     yfuite=yfuite/compteur2-y;
     A=-xfuite/fabs(xfuite);
     B=-yfuite/fabs(yfuite);
+    if (dcrit<tailleO/3){
+      C=xcrit-x;D=ycrit-y;
+      C=-C/fabs(C);D=-D/fabs(D);
     }
+    }
+
   //avec un eloignement gaussien
-    vx = vgroupe*(0.988*vx/normvitesse + 0.004*vitessegroupex/normvitessegroupe + 0.008*(positiongroupex-x)/normposition+A*0.01*gaussienne(xfuite,tailleO));
-    vy = vgroupe*(0.988*vy/normvitesse + 0.004*vitessegroupey/normvitessegroupe + 0.008*(positiongroupey-y)/normposition+B*0.01*gaussienne(yfuite,tailleO));
+    vx = vgroupe*(0.99*vx/normvitesse + 0.01*vitessegroupex/normvitessegroupe + 0.008*(positiongroupex-x)/normposition + A*0.008*gaussienne(xfuite,3*tailleO)+C*0.08/***gaussienne(xcrit,3*tailleO)*/);
+    vy = vgroupe*(0.99*vy/normvitesse + 0.01*vitessegroupey/normvitessegroupe + 0.008*(positiongroupey-y)/normposition+ B*0.008*gaussienne(yfuite,3*tailleO)+D*0.08/***gaussienne(ycrit,3*tailleO)*/);
+    
+
+    //vx = vgroupe*(0.988*vx/normvitesse +/* 0.004*vitessegroupex/normvitessegroupe*/ + 0.008*(positiongroupex-x)/normposition + A*0.1*gaussienne(xfuite,tailleO)/**+C*10*gaussienne(xcrit,3*tailleO)*/);
+    //vy = vgroupe*(0.988*vy/normvitesse +/* 0.004*vitessegroupey/normvitessegroupe*/ + 0.008*(positiongroupey-y)/normposition+ B*0.1*gaussienne(yfuite,tailleO)/**+D*10*gaussienne(ycrit,3*tailleO)*/);
+    
   }
   else
   {

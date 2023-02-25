@@ -2,4 +2,5 @@
 #define _FONCTONS_H
 double rejetgaussien(double moyenne, double variance);
 double gaussienne(double x,double variance);
+double lorentzienne(double x,double variance);
 #endif
