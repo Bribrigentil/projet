@@ -1,0 +1,83 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\renewcommand{\contentsname}{Sommaire}
+\author{Rémy}
+\begin{document}
+\begin{center}
+  \includegraphics[scale=0.08]{Logo.png}  \hfill
+  \includegraphics[scale=0.7]{logo 2.png}  
+\end{center}
+\bigskip
+\bigskip
+\bigskip
+\begin{center}
+\Huge
+Rapport projet Programmation Orientée Objet C++
+\end{center}
+\bigskip
+\bigskip
+\bigskip
+\begin{center}
+\LARGE
+\textbf{Baptiste Verkampt, Brian Deboutière, Rémy Dangoisse}
+\end{center}
+\bigskip
+\bigskip
+\begin{center}
+    \huge
+    \textbf{Simulation d'un système complexe : Application à une nuée d'étourneaux}
+\end{center}
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\begin{center}
+\includegraphics[scale=0.3]{lincroyable-cliche-dune-nuee-doiseaux.jpg} 
+\end{center}
+\newpage
+\tableofcontents
+\newpage
+\section{Introduction}
+Un système complexe est constitué d'un grand nombre d'éléments interagissant entre eux. L'interaction entre ces éléments donne lieu à des propriétés qui ne peuvent pas être observées à l'échelle de l'individu.
+L'étude des systèmes complexes est très intéressante, car ils sont omniprésents dans différents domaines, que ce soit en biologie, physique ou sciences sociales.
+Un système complexe bien connu est la foule. Ces simulations sont très importantes pour vérifier si une architecture est propice à une évacuation rapide ou non. Ils sont de plus en plus utilisés au cinéma ou même dans les jeux vidéos. 
+A travers ce projet, nous allons essayer de simuler l'un des systèmes complexes les plus célèbres, qui est la nuée d'étourneaux.
+Ce type de simulation est assez récent,ça a commencé dans les années 1980 avec Craig Reynolds. Depuis, de nombreux modèles ont émergé. Aujourd'hui, la simulation de foules est généralement réalisée à l'aide d'intelligence artificielle, mais ce n'est pas notre objectif dans ce projet.
+Le but de ce projet est de réaliser une simulation d'un mouvement collectif réaliste mais qui ne soit pas nécessairement représentatif du comportement réel des étourneaux.
+
+
+\section{Modèle}
+Pour réaliser cette simulation, nous utliserons un ensemble de règles élémentaires individuelles, qui sont:
+\begin{itemize}
+	\item La cohésion, les oiseaux ont tendance à vouloir se rapprocher de leur voisin le plus proche. 
+	\item La séparation, les oiseaux ne peuvent pas occuper le même endroit dans l'espace au même instant.
+	\item L'alignement, les oiseaux ont tendance à aligner leur mouvement sur le barycentre des oiseaux qui les entourent.
+\end{itemize}
+
+Nous utilisons 2 hypothèses pour notre modèle,
+\begin{itemize}
+	\item Nous utiliserons un nombre restreint d'oiseaux, ce qui nous permettra de ne pas considérer l'ensemble comme un fluide.
+	\item Les oiseaux n'ont pas conscience du mouvement global et réagissent en fonction de leurs voisins proches.
+\end{itemize}
+
+
+
+
+
+
+\section{bibliographie}
+
+https://interstices.info/la-simulation-de-foule-au-service-du-divertissement/
+
+
+
+
+\end{document}
