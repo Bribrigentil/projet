@@ -1,0 +1,46 @@
+#include<fstream>
+#include <cstdlib>
+#include <ctime>
+
+//Pour écrire dans un fichier, pour récupérer des données.
+fstream fich;
+fich.open("nom_du_fichier.res", ios::out);
+
+fich << "a = " << a << "b= " << b << "c= " << c << endl;
+fich.close()
+
+
+
+
+
+//afficher une arrière plan
+sf::Texture backgroundTexture;
+if (!backgroundTexture.loadFromFile("background.png"))
+{
+    // Erreur : impossible de charger l'image
+    return EXIT_FAILURE;
+}
+
+// Création du sprite de fond
+sf::Sprite backgroundSprite(backgroundTexture);
+
+window.draw(backgroundSprite); //mettre à la fin
+
+    
+
+
+//tirage d'un nombre qui vaut soit +1 ou -1 
+//On doit initialiser la graine au début, mais normalement c'est bon
+
+
+// Tirage d'un entier aléatoire entre 0 et 1
+int random_int = std::rand() % 2;
+
+// Conversion de l'entier aléatoire en un nombre soit +1, soit -1, pour ça il test si random_int == 0 si oui ça vaut -1 sinon ça vaut 1
+int random_sign = (random_int == 0) ? -1 : 1;
+
+double epsilon = 2;  //mettre une valeur cohérente, 
+double bruit; 
+bruit = random_sign*epsilon  //ajouter ce terme dans la boucle pour ajuster la postion
+
+//peut-être transition du 1er ordre ?
