@@ -67,8 +67,8 @@ void oiseau::adaptationvitesse(vector<oiseau> nuee, double dt, double vgroupe, d
 
   for (int i = 0; i < nuee.size(); i++) {
     double distance=sqrt((nuee[i].x-x)*(nuee[i].x-x)+(nuee[i].y-y)*(nuee[i].y-y));
-    
-    if ((distance!=0) && (distance-Rayonvision<=0)){
+    //cout<<visible(x,y,vx,vy,nuee[i],Rayonvision,anglevue)<<endl;
+    if ((distance!=0) && visible(x,y,vx,vy,nuee[i],Rayonvision,anglevue)){         //(distance-Rayonvision<=0)
       //cout<<(sqrt((nuee[i].x-x)*(nuee[i].x-x)+(nuee[i].y-y)*(nuee[i].y-y))-Rayonvision<=0)<<endl;
       compteur1++;
       vitessegroupex += nuee[i].vx;
@@ -128,10 +128,12 @@ void oiseau::adaptationvitesse(vector<oiseau> nuee, double dt, double vgroupe, d
     }
 
   //avec un eloignement gaussien
+    //vx = vgroupe*(0.999*vx/normvitesse + 0.001*vitessegroupex/normvitessegroupe + 0.008*(positiongroupex-x)/normposition + A*0.008*gaussienne(xfuite,3*tailleO)+C*0.08/***gaussienne(xcrit,3*tailleO)*/);
+    //vy = vgroupe*(0.999*vy/normvitesse + 0.001*vitessegroupey/normvitessegroupe + 0.008*(positiongroupey-y)/normposition+ B*0.008*gaussienne(yfuite,3*tailleO)+D*0.08/***gaussienne(ycrit,3*tailleO)*/);
+    
     vx = vgroupe*(0.99*vx/normvitesse + 0.01*vitessegroupex/normvitessegroupe + 0.008*(positiongroupex-x)/normposition + A*0.008*gaussienne(xfuite,3*tailleO)+C*0.08/***gaussienne(xcrit,3*tailleO)*/);
     vy = vgroupe*(0.99*vy/normvitesse + 0.01*vitessegroupey/normvitessegroupe + 0.008*(positiongroupey-y)/normposition+ B*0.008*gaussienne(yfuite,3*tailleO)+D*0.08/***gaussienne(ycrit,3*tailleO)*/);
     
-
     //vx = vgroupe*(0.988*vx/normvitesse +/* 0.004*vitessegroupex/normvitessegroupe*/ + 0.008*(positiongroupex-x)/normposition + A*0.1*gaussienne(xfuite,tailleO)/**+C*10*gaussienne(xcrit,3*tailleO)*/);
     //vy = vgroupe*(0.988*vy/normvitesse +/* 0.004*vitessegroupey/normvitessegroupe*/ + 0.008*(positiongroupey-y)/normposition+ B*0.1*gaussienne(yfuite,tailleO)/**+D*10*gaussienne(ycrit,3*tailleO)*/);
     

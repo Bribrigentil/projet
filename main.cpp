@@ -18,7 +18,7 @@ int main()
   srand(time(NULL));
   
   
-  double Rayonvision = 100, Tempsreaction = 1, Anglevue = 0, Memoireangle = 1, vgroupe = 2,TailleOiseau=Rayonvision/10; //propriétés, comportement des oiseaux
+  double Rayonvision = 200, Tempsreaction = 1, Anglevue = M_PI*4/5., Memoireangle = 1, vgroupe = 2,TailleOiseau=Rayonvision/10; //propriétés, comportement des oiseaux
   
   int Taillesurfacex = 1750, Taillesurfacey = 950; //taille de l'interface SFML sur laquelle les oiseaux vont se déplacer
   
@@ -27,7 +27,6 @@ int main()
   double dt = 0.1; //intervalle de temps entre chaque itération
   
   vector<oiseau> nuee; //Notre nuée d'oiseaux est définie comme un vecteur d'oiseaux
-
   for(int i = 0; i < N; i++) { //initialisation de la nuée d'oiseaux
     oiseau O(Rayonvision, Tempsreaction, Anglevue, Memoireangle, vgroupe, Taillesurfacex, Taillesurfacey,TailleOiseau);
     nuee.push_back(O);
@@ -72,9 +71,9 @@ int main()
 	oiseau[0].color = sf::Color::Green;
   oiseau[1].color = sf::Color::White;
 	oiseau[2].color = sf::Color::White;
-
+  window.draw(oiseau);
   // Champ de vision oiseau
-  
+  /*
     sf::CircleShape cercle(Rayonvision);
     cercle.setOutlineThickness(1.f);
     cercle.setFillColor(sf::Color::Transparent);
@@ -97,13 +96,14 @@ int main()
 	// pas de coordonnées de texture ici, nous verrons ça plus tard
 
 	//On dessine les oiseaux un par un
-	window.draw(oiseau);
+	*/
 
   // Barycentre de chaque oiseau
   sf::CircleShape point(2.f);
   point.setFillColor(sf::Color(199,71,191));
   point.setPosition(nuee[i].barycentrex-1.f,nuee[i].barycentrey-5.f);
   window.draw(point);
+ 
       }
 
 //On dessine LE centre de masse total

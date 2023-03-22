@@ -1,7 +1,7 @@
 #include<iostream>
 #include<math.h>
 #include"fonctions.h"
-
+#include"oiseaux.h"
 using namespace std;
 
 double rejetgaussien(double moyenne, double variance) { // Fournit valeur alea. de densite gaussienne
@@ -19,4 +19,15 @@ double gaussienne(double x,double variance){
 }
 double lorentzienne(double x,double variance){
   return 1/(1+x*x/variance);
+}
+
+double distance(double x, double y){
+  return sqrt((x*x+y*y));
+}
+class oiseau;
+bool visible(double x,double y,double vx,double vy,oiseau O2,double rayon,double anglevue){
+  double normV=distance(vx,vy);
+  double ecart=distance(x-O2.x,y-O2.y);
+  double vision=vx*(O2.x-x)+vy*(O2.y-y); vision/=normV*ecart;
+  return ((cos(anglevue)-vision<=0)&&(ecart-rayon<=0));
 }
