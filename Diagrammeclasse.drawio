@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-22T16:44:53.205Z" agent="5.0 (X11; Ubuntu)" etag="UBixsfVOtFkyNd8k4GL0" version="20.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-22T16:47:32.363Z" agent="5.0 (X11; Ubuntu)" etag="epk9lg5iw3pXWEm01bLV" version="20.7.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1034" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -20,7 +20,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="DR78Dc5imM91qQt1KUeZ-80" value="Objet" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="750" y="30" width="280" height="310" as="geometry" />
+          <mxGeometry x="920" y="40" width="280" height="310" as="geometry" />
         </mxCell>
         <mxCell id="DR78Dc5imM91qQt1KUeZ-84" value="&lt;div align=&quot;center&quot;&gt;Attributs&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;div align=&quot;left&quot;&gt;x,y : positions centrale de l&#39;objet considéré&lt;/div&gt;&lt;/li&gt;&lt;li&gt;Vx,Vy : composantes de vitesse&lt;/li&gt;&lt;li&gt;Vinit : vitesse initiale associée à la vitesse max&lt;/li&gt;&lt;/ul&gt;&lt;div align=&quot;center&quot;&gt;Methodes&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;taille() : &lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=left;" parent="DR78Dc5imM91qQt1KUeZ-80" vertex="1">
           <mxGeometry y="26" width="280" height="284" as="geometry" />
@@ -99,30 +99,30 @@
           <mxGeometry y="318" width="200" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vbQZEi8SgW1_n33Xd7KA-20" value="cercle" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="500" y="280" width="200" height="210" as="geometry">
+          <mxGeometry x="500" y="280" width="360" height="210" as="geometry">
             <mxRectangle x="220" y="120" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vbQZEi8SgW1_n33Xd7KA-21" value="+ Rayon : double" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-20">
-          <mxGeometry y="26" width="200" height="26" as="geometry" />
+          <mxGeometry y="26" width="360" height="26" as="geometry" />
         </mxCell>
         <mxCell id="vbQZEi8SgW1_n33Xd7KA-25" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-20">
-          <mxGeometry y="52" width="200" height="8" as="geometry" />
+          <mxGeometry y="52" width="360" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="vbQZEi8SgW1_n33Xd7KA-26" value="&lt;div&gt;&amp;nbsp;+ cercle():&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-20">
-          <mxGeometry y="60" width="200" height="30" as="geometry" />
+        <mxCell id="vbQZEi8SgW1_n33Xd7KA-26" value="&lt;div&gt;&amp;nbsp;+ cercle(xo: double, yo: double, Ro: double):&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-20">
+          <mxGeometry y="60" width="360" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vbQZEi8SgW1_n33Xd7KA-27" value="&lt;div&gt;&amp;nbsp;+ ~cercle():&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-20">
-          <mxGeometry y="90" width="200" height="30" as="geometry" />
+          <mxGeometry y="90" width="360" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vbQZEi8SgW1_n33Xd7KA-28" value="&lt;div&gt;&amp;nbsp;+ positioninitiale():&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-20">
-          <mxGeometry y="120" width="200" height="30" as="geometry" />
+        <mxCell id="vbQZEi8SgW1_n33Xd7KA-28" value="&lt;div&gt;&amp;nbsp;+ positioninitiale(xo: double, yo: double):&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-20">
+          <mxGeometry y="120" width="360" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vbQZEi8SgW1_n33Xd7KA-29" value="&lt;div&gt;&amp;nbsp;+ defRayon():&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-20">
-          <mxGeometry y="150" width="200" height="30" as="geometry" />
+        <mxCell id="vbQZEi8SgW1_n33Xd7KA-29" value="&lt;div&gt;&amp;nbsp;+ defRayon(Ro: double):&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-20">
+          <mxGeometry y="150" width="360" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vbQZEi8SgW1_n33Xd7KA-30" value="&lt;div&gt;&amp;nbsp;+ contournement(): void&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-20">
-          <mxGeometry y="180" width="200" height="30" as="geometry" />
+        <mxCell id="vbQZEi8SgW1_n33Xd7KA-30" value="&lt;div&gt;&amp;nbsp;+ contournement(nuee: vector&amp;lt;oiseau&amp;gt;*, vgroupe:double): void&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-20">
+          <mxGeometry y="180" width="360" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
