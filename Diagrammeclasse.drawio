@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-22T17:10:54.589Z" agent="5.0 (X11; Ubuntu)" etag="CSK96VfADB4DLarGwfjB" version="20.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-22T17:12:12.046Z" agent="5.0 (X11; Ubuntu)" etag="TU5vHE_cFe7Pb_liyp8z" version="20.7.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2207" dy="1119" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1963" dy="921" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -94,7 +94,7 @@
         <mxCell id="vbQZEi8SgW1_n33Xd7KA-13" value="&lt;div&gt;&amp;nbsp;+ adaptationvitesse(nuee: vector&amp;lt;oiseau&amp;gt;, vgroupe: double, Taillesurfacex: double, Taillesurfacey: double): void&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-3">
           <mxGeometry y="258" width="820" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vbQZEi8SgW1_n33Xd7KA-14" value="&lt;div&gt;&amp;nbsp;+ &amp;lt;&amp;lt;():&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-3">
+        <mxCell id="vbQZEi8SgW1_n33Xd7KA-14" value="&lt;div&gt;&amp;nbsp;+ friend operator&amp;lt;&amp;lt;(out: ostream&amp;amp;, O: const oiseau&amp;amp;): ostream&amp;amp;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-3">
           <mxGeometry y="288" width="820" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vbQZEi8SgW1_n33Xd7KA-10" value="&lt;div&gt;&amp;nbsp;+ &quot;&lt;b&gt;&lt;i&gt;destroy&lt;/i&gt;&lt;/b&gt;&quot; ~oiseau():&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-3">
