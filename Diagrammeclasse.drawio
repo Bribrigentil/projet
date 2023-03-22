@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-22T16:55:25.242Z" agent="5.0 (X11; Ubuntu)" etag="rgbOM6rEW6It7B81C_Lx" version="20.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-22T16:59:50.967Z" agent="5.0 (X11; Ubuntu)" etag="qQ3tsv7hKrD6OKOCRfPk" version="20.7.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1915" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1844" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -29,7 +29,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vbQZEi8SgW1_n33Xd7KA-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="DR78Dc5imM91qQt1KUeZ-85" target="vbQZEi8SgW1_n33Xd7KA-20">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="260" />
+              <mxPoint x="680" y="260" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="DR78Dc5imM91qQt1KUeZ-85" value="Obstacle&#xa;" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="199" y="40" width="430" height="200" as="geometry">
@@ -99,7 +104,7 @@
           <mxGeometry y="318" width="770" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vbQZEi8SgW1_n33Xd7KA-20" value="cercle" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="500" y="280" width="360" height="210" as="geometry">
+          <mxGeometry x="500" y="354" width="360" height="210" as="geometry">
             <mxRectangle x="220" y="120" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -123,6 +128,12 @@
         </mxCell>
         <mxCell id="vbQZEi8SgW1_n33Xd7KA-30" value="&lt;div&gt;&amp;nbsp;+ contournement(nuee: vector&amp;lt;oiseau&amp;gt;*, vgroupe:double): void&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="vbQZEi8SgW1_n33Xd7KA-20">
           <mxGeometry y="180" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vbQZEi8SgW1_n33Xd7KA-35" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vbQZEi8SgW1_n33Xd7KA-3" target="vbQZEi8SgW1_n33Xd7KA-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="340" as="sourcePoint" />
+            <mxPoint x="470" y="340" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
