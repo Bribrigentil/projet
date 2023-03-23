@@ -1,0 +1,13 @@
+Pour caractériser notre système, nous utilisons un paramètre d'ordre qui nous permet de savoir si notre nuée possède une bonne cohésion. Ce paramètre est défini comme,
+\begin{center}
+\begin{equation}
+$$ $\phi = \dfrac{\left\lVert \sum\limits_{i} \vec{v_i} \right\rVert}{\sum\limits_{i} \lVert \vec{v_i} \rVert}$ $$
+\end{equation}
+\end{center}
+
+
+Cet indicateur de cohésion semble être pertinent, car il varie entre 0 et 1. En effet, lorsque tous les oiseaux sont alignés, $\phi \rightarrow 1$, alors que $\phi \rightarrow 0$ lorsque les oiseaux ont des directions différentes.
+
+Cependant, lorsque le rayon de vision est inférieur à la taille de l'écran, plusieurs nuées se forment, empêchant ainsi la cohésion totale du groupe. Toutefois, il existe une cohésion locale. Dans ce cas, bien que la cohésion soit présente, $\phi \neq 1 $(peut être mettre une photo).
+
+Dans ce cas, il nous faut un autre indicateur de cohésion qui nous permettra de caractériser la cohésion locale. Nous pouvons tracer la différence de position d'un oiseau par rapport au barycentre en fonction du temps. (Voir partie numéro)
