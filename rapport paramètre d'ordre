@@ -11,3 +11,8 @@ Cet indicateur de cohésion semble être pertinent, car il varie entre 0 et 1. E
 Cependant, lorsque le rayon de vision est inférieur à la taille de l'écran, plusieurs nuées se forment, empêchant ainsi la cohésion totale du groupe. Toutefois, il existe une cohésion locale. Dans ce cas, bien que la cohésion soit présente, $\phi \neq 1 $(peut être mettre une photo).
 
 Dans ce cas, il nous faut un autre indicateur de cohésion qui nous permettra de caractériser la cohésion locale. Nous pouvons tracer la différence de position d'un oiseau par rapport au barycentre en fonction du temps. (Voir partie numéro)
+
+
+
+Conclusions :
+Il existe plusieurs pistes d'amélioration pour ce projet. Tout d'abord, les obstacles dans notre programme ne sont pas entièrement fonctionnels. Malheureusement, nous n'avons pas pu résoudre ce problème à temps. De plus, nous pourrions ajouter des termes perturbateurs dans notre système pour le rapprocher le plus possible d'une réelle nuée d'oiseaux et de réaliser un modèle en 3 dimensions.
